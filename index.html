@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TikTok Recharge Simulator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>💎 TikTok Recharge</h1>
+
+  <p class="disclaimer">
+    Demo recharge simulator (No real payment)
+  </p>
+
+  <form id="rechargeForm">
+    <label>TikTok Username</label>
+    <input type="text" id="username" placeholder="@username" required>
+
+    <label>Select Coins</label>
+    <select id="coins" required>
+      <option value="">-- Select Package --</option>
+      <option value="70|0.99">70 Coins — $0.99</option>
+      <option value="350|4.99">350 Coins — $4.99</option>
+      <option value="700|9.99">700 Coins — $9.99</option>
+      <option value="1400|19.99">1400 Coins — $19.99</option>
+      <option value="3500|49.99">3500 Coins — $49.99</option>
+    </select>
+
+    <button type="submit">Recharge Now</button>
+  </form>
+
+  <div id="result" class="hidden"></div>
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+</body>
+</html>
